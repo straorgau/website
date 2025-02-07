@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #333434;
+  --color-fg-dark: #F2F4E8;
+
+  --color-bg: #FCFFEF;
+  --color-fg: #333434;
+
+  --color-bus: #EA9236;
+  --color-tram: #81BD50;
+  --color-metro: #398ACC;
+  --color-vline: #794296;
+
+  --font-sans: "Public Sans Variable", sans-serif;
+}
