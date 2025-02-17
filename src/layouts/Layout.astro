@@ -2,6 +2,12 @@
 import "@fontsource-variable/public-sans";
 
 import "~/styles/global.css";
+
+interface Props {
+	title?: string;
+}
+
+const { title } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -15,9 +21,9 @@ import "~/styles/global.css";
 		<link rel="manifest" href="/site.webmanifest" />
 
 		<meta name="generator" content={Astro.generator} />
-		<title>Student Transport Riders Association</title>
+		<title>{title ? title : "Student Transport Riders Association"}</title>
 	</head>
-	<body class="min-h-screen min-w-screen flex flex-col bg-bg-dark text-fg-dark">
+	<body class="min-h-screen min-w-screen flex flex-col bg-bg-dark text-fg-dark p-12 gap-4">
 		<slot />
 	</body>
 </html>
