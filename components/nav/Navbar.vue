@@ -21,7 +21,7 @@
         <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/membership">Membership</a>
       </Dropdown>
     </div>
-    <div class="md:hidden flex flex-row justify-end flex-grow">
+    <div class="lg:hidden flex flex-row justify-end flex-grow">
       <MobileDropdown>
         <a class="text-xl font-semibold underline" href="/join">Join</a>
         <MobileSubmenu title="About">
