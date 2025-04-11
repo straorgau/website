@@ -34,7 +34,7 @@
         </span>
         <span class="text-sm">Website built by <a href="https://wale.au" class="underline">Duale Siad</a> (<a href="https://wale.works" class="underline">Waleworks</a>).</span>
       </div>
-      <div class="flex flex-col gap-2 items-end">
+      <div class="flex flex-col gap-2 lg:items-end">
         <h1 class="text-xl font-bold">Navigation</h1>
         <a href="/" class="text-lg font-semibold underline text-fg-dark/80">Home</a>
         <a href="/policies" class="text-lg font-semibold underline text-fg-dark/80">Policies</a>
