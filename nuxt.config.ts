@@ -8,9 +8,20 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
+    '@pinia/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [ tailwindcss() ]
+  },
+  runtimeConfig: {
+    tidyHq: {
+      clientSecret: ""
+    },
+    public: {
+      tidyHq: {
+        clientId: ""
+      }
+    }
   }
 })
