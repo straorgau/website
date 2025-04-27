@@ -1,5 +1,5 @@
 <template>
-  <nav class="absolute top-0 flex flex-row items-center w-full p-8">
+  <nav class="sticky flex flex-row items-center w-full p-8 bg-bg-dark">
     <a class="flex flex-row gap-4 items-center text-sm" href="/">
       <img
         src="/assets/img/logo.png"
