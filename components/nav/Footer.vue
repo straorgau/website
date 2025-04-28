@@ -48,18 +48,19 @@
       </div>
       <div class="w-full px-16 grid lg:grid-cols-[repeat(auto-fit, 16.6666666%)] m-auto gap-4 justify-center">
         <span class="text-sm font-semibold text-center">
-                The STRA operates on the Country of the Wurundjeri Woi-Wurrung and Boon Wurrung peoples of the Kulin nation 
-                and pays respect to First Peoples throughout the land we call Victoria and Australia. 
-                We acknowledge the unique impact of transport infrastructure on the native environment. 
-                Sovereignty was never ceded, this always was and always will be Aboriginal land.
+          The STRA operates on the Country of the Wurundjeri Woi-Wurrung and Boon Wurrung peoples of the Kulin nation
+          and pays respect to First Peoples throughout the land we call Victoria and Australia. 
+          We acknowledge the unique impact of transport infrastructure on the native environment. 
+          Sovereignty was never ceded, this always was and always will be Aboriginal land.
         </span>
         <div class="flex flex-col gap-2 text-sm text-center">
-              <p>Website built by 
-                <a href="https://wale.au" class="underline underline-offset-2">Duale Siad</a> 
-                (<a href="https://wale.works" class="underline underline-offset-2">Waleworks</a>).
-                <a href="https://codeberg.org/stra/website" class="underline underline-offset-2">Source code</a>
-              </p>
-            </div>
+          <p>© Student Transport Riders Association Incorporated, ABN 30 124 602 756</p>
+          <p>Website built by 
+            <a href="https://wale.au" class="underline underline-offset-2">Duale Siad</a> 
+            (<a href="https://wale.works" class="underline underline-offset-2">Waleworks</a>).
+            <a href="https://codeberg.org/stra/website" class="underline underline-offset-2">Source code</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
