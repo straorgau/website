@@ -1,5 +1,5 @@
 <template>
-   <div class="max-w-full flex flex-col place-items-center bg-inherit px-4 md:px-0 pb-12">
+   <div class="flex flex-col place-items-center bg-inherit px-4 md:px-0 pb-12">
     <div class="flex flex-col max-w-[40rem]">
       <div class="max-w-2xl gap-4">
         <img

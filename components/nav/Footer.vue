@@ -12,20 +12,20 @@
                   >
                 </a>
               <div class="flex flex-row gap-4">
-                <a href="https://www.youtube.com/channel/UCQJKJgnMlwMRUDS6QFJ8RgA" rel=me>
-                  <Icon aria-label="Youtube" name="simple-icons:youtube" size="24" />
+                <a aria-label="Youtube" href="https://www.youtube.com/channel/UCQJKJgnMlwMRUDS6QFJ8RgA" rel=me>
+                  <Icon name="simple-icons:youtube" size="24" />
                 </a>
-                <a href="https://www.facebook.com/people/Student-Transport-Riders-Association/61575645665159/">
-                  <Icon aria-label="Facebook" name="simple-icons:facebook" size="24" />
+                <a aria-label="Facebook" href="https://www.facebook.com/people/Student-Transport-Riders-Association/61575645665159/">
+                  <Icon name="simple-icons:facebook" size="24" />
                 </a>
-                <a href="https://aus.social/@stra" rel=me>
-                  <Icon aria-label="Mastodon" name="simple-icons:mastodon" size="24" />
+                <a aria-label="Facebook" href="https://aus.social/@stra" rel=me>
+                  <Icon name="simple-icons:mastodon" size="24" />
                 </a>
-                <a href="https://instagram.com/stra_au" rel=me>
-                  <Icon aria-label="Instagram" name="simple-icons:instagram" size="24" />
+                <a aria-label="Instagram" href="https://instagram.com/stra_au" rel=me>
+                  <Icon name="simple-icons:instagram" size="24" />
                 </a>
-                <a href="https://bsky.app/@stra.org.au" rel=me>
-                  <Icon aria-label="Bluesky" name="simple-icons:bluesky" size="24" />
+                <a aria-label="Bluesky" href="https://bsky.app/@stra.org.au" rel=me>
+                  <Icon name="simple-icons:bluesky" size="24" />
                 </a>
               </div>
             </div>
