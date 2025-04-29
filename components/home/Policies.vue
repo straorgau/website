@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-bg text-fg w-full p-8 flex flex-col gap-6">
+  <section class="bg-bg text-fg w-full p-8 flex flex-col gap-4">
     <h1 class="text-3xl font-bold">Policies</h1>
-    <div class="flex flex-col w-full gap-4">
+    <div class="flex flex-col max-w-full lg:self-center gap-4">
       <div
         class="bg-[#d7d2cb]/80 p-4 rounded-sm w-fit border-l-4 lg:self-start border-metro"
       >
@@ -12,7 +12,7 @@
         >
       </div>
       <div
-        class="bg-[#d7d2cb]/80 p-4 rounded-sm w-fit border-r-4 lg:self-end border-tram"
+        class="bg-[#d7d2cb]/80 p-4 rounded-sm w-fit border-l-4 lg:self-end border-tram"
       >
         <h1 class="text-xl font-bold">Accessiblity</h1>
         <span class="text-lg font-semibold"
@@ -29,13 +29,13 @@
           connection.</span
         >
       </div>
-      <a
+    </div>
+    <a
         class="flex flex-row justify-end text-2xl font-bold underline underline-offset-2"
         href="/policies"
       >
         <Icon name="gg:arrow-top-right" size="32" />
         Full Policies
-      </a>
-    </div>
+    </a>
   </section>
 </template>

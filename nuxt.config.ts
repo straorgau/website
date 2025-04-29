@@ -8,9 +8,13 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
+    '@nuxt/content',
     '@pinia/nuxt',
   ],
   css: ['~/assets/css/main.css'],
+  content: {
+    
+  },
   vite: {
     plugins: [ tailwindcss() ]
   },
