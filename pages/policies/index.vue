@@ -10,7 +10,7 @@ const { data: policies } = await useAsyncData(route.path, async () => {
 </script>
 
 <template>
-  <div class="text-fg-dark bg-bg-dark">
+  <div class="text-fg-dark bg-bg-dark min-h-screen">
     <Navbar />
     <div class="flex flex-col p-8 gap-4">
       <h1 class="text-4xl font-bold">Policies</h1>
@@ -21,6 +21,7 @@ const { data: policies } = await useAsyncData(route.path, async () => {
           <span class="text-lg font-regular">{{ policy.description }}</span>
           <a :href="policy.path" class="text-lg font-bold underline">Full policy</a>
         </div>
+      
         <span class="text-xl">Full policy documents and file history can be found in 
           <a href="https://codeberg.org/stra/policies/" class="underline underline-offset-4">this Codeberg repository</a>.
         </span>

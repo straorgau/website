@@ -17,10 +17,23 @@ const { data: page } = await useAsyncData(route.path, async () => {
         
         <a :href="page.path" class="underline underline-offset-4 font-bold w-fit pl-2">{{page.title}}</a>
       </div>
+      <div class="flex">
+        <span class="text-lg font-extralight pr-2">Last updated {{ page.meta.lastUpdated }}. 
+          <a :href="`https://codeberg.org/stra/policies/src/branch/main/${page.stem}.${page.extension}`" class="underline underline-offset-4">Source</a>
+        </span>
+      </div>
       <section class="prose prose-invert lg:prose-lg">
-        <ContentRenderer :value="page.body" />
+        <ContentRenderer :value="page.body" class="policy-body" />
       </section>
     </div>
     <Footer />
   </div>
 </template>
+<style>
+.policy-body {
+  & > * {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+</style>
