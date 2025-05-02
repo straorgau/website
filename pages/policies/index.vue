@@ -4,7 +4,6 @@ import Footer from '~/components/nav/Footer.vue';
 const route = useRoute();
 
 const { data: policies } = await useAsyncData(route.path, async () => {
-  console.log(await queryCollection('policies').all())
   return queryCollection('policies').all()
 });
 </script>
