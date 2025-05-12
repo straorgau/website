@@ -21,7 +21,7 @@ const props = defineProps({
       <img
         src="/assets/southKensington.jpg"
         alt="View of the platforms at South Kensington during the evening."
-        class="max-w-[60%] rounded-2xl"
+        class="lg:max-w-[40%] rounded-2xl"
       >
     </div>
     <Footer />
