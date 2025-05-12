@@ -14,7 +14,7 @@
       <div
         class="bg-[#d7d2cb]/80 p-4 rounded-sm w-fit border-l-4 lg:self-end border-tram"
       >
-        <h1 class="text-xl font-bold">Accessiblity</h1>
+        <h1 class="text-xl font-bold">Accessibility</h1>
         <span class="text-lg font-semibold"
           >No university should go without an accessible stop, whether for
           trains, trams or buses.</span

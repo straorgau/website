@@ -1,12 +1,13 @@
 <template>
    <div class="flex flex-col place-items-center bg-inherit px-4 md:px-0 pb-12">
-    <div class="flex flex-col max-w-[40rem]">
+    <div class="flex flex-col items-center text-center">
       <div class="max-w-2xl gap-4">
-        <img
-          src="/assets/img/hero.jpg"
+        <NuxtImg
+          src="/assets/hero.jpg"
           alt="Passengers walking across Royal Parade, facing the University of Melbourne."
           class="pb-4"
-        >
+          height="600"
+        />
       </div>
       <h1 class="text-5xl font-bold">All aboard.</h1>
       <p class="py-6">

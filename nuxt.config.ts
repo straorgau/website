@@ -19,6 +19,10 @@ export default defineNuxtConfig({
   content: {
     
   },
+  image: {
+    quality: 80,
+    format: ["webp", "jpg"]
+  },
   site: {
     url: "https://stra.org.au",
     title: "Student Transport Riders Association",
