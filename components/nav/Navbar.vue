@@ -11,28 +11,20 @@
     <div class="hidden lg:flex lg:flex-row lg:justify-end lg:flex-grow self-center lg:gap-4">
       <a class="text-xl font-semibold underline" href="/join">Join</a>
       <Dropdown title="About">
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/policies">Policies</a>
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/team">Team</a>
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/history">History</a>
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/contact">Contact</a>
-      </Dropdown>
-      <Dropdown title="Members">
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/events">Events</a>
-        <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/membership">Membership</a>
+        <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/about">About Us</a>
+        <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/policies">Policies</a>
+        <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/team">Team</a>
+        <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/contact">Contact</a>
       </Dropdown>
     </div>
     <div class="lg:hidden flex flex-row justify-end flex-grow">
       <MobileDropdown>
         <a class="text-xl font-semibold underline" href="/join">Join</a>
         <MobileSubmenu title="About">
+          <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/about">About the STRA</a>
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/policies">Policies</a>
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/team">Team</a>
-          <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/history">History</a>
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/contact">Contact</a>
-        </MobileSubmenu>
-        <MobileSubmenu title="Members">
-          <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/events">Events</a>
-          <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/membership">Membership</a>
         </MobileSubmenu>
       </MobileDropdown>
     </div>

@@ -5,7 +5,7 @@
       <Icon v-if="!show" aria-label="Open" name="gg:chevron-down" size="20" />
       <Icon v-else aria-label="Close" name="gg:chevron-up" size="20" />
     </button>
-    <div v-show="show" class="fixed py-4 mt-2 mr-16 rounded-md shadow-xl w-fit border-2 bg-bg-dark border-fg-dark">
+    <div v-show="show" class="absolute py-4 mt-2 mr-16 rounded-md shadow-xl w-fit border-2 bg-bg-dark border-fg-dark">
       <div class="flex flex-col gap-4 px-4">
         <slot/>
       </div>

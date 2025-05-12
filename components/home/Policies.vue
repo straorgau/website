@@ -30,12 +30,11 @@
         >
       </div>
     </div>
-    <a
-        class="flex flex-row justify-end text-2xl font-bold underline underline-offset-2"
-        href="/policies"
+    <span
+        class="flex flex-row justify-end text-2xl font-light"
       >
         <Icon name="gg:arrow-top-right" size="32" />
-        Full Policies
-    </a>
+        Full Policies (coming soon)
+    </span>
   </section>
 </template>

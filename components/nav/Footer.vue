@@ -38,10 +38,9 @@
                 <a href="/sitemap.xml" class="text-lg font-semibold underline text-fg-dark/80">Sitemap</a>
               </div>
               <div class="grid grid-rows-[repeat(auto-fit,20%)] gap-2 place-items-center">
-                <h1 class="text-xl font-bold">Legal</h1>
-                <a href="/legal/agreement" class="text-lg font-semibold underline text-fg-dark/80">Agreement</a>
-                <a href="/legal/code-of-conduct" class="text-lg font-semibold underline text-fg-dark/80">Code of Conduct</a>
-                <a href="/legal/privacy-policy" class="text-lg font-semibold underline text-fg-dark/80">Privacy Policy</a>
+                <h1 class="text-xl font-bold">Policies</h1>
+                <a href="/policies/code-of-conduct" class="text-lg font-semibold underline text-fg-dark/80">Code of Conduct</a>
+                <a href="/policies/rules" class="text-lg font-semibold underline text-fg-dark/80">Rules</a>
               </div>
             </div>
           </div>

@@ -10,10 +10,23 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content',
     '@pinia/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    'nuxt-og-image',
+    '@nuxtjs/seo'
   ],
   css: ['~/assets/css/main.css'],
   content: {
     
+  },
+  site: {
+    url: "https://stra.org.au",
+    title: "Student Transport Riders Association",
+    name: "Student Transport Riders Association",
+    description: "Student Transport Riders Association is the premier student body for public transport in Victoria."
+  },
+  robots: {
+    blockAiBots: true,
   },
   vite: {
     plugins: [ tailwindcss() ]

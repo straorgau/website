@@ -15,7 +15,7 @@
       <div class="flex flex-row gap-4">
           <a class="btn btn-lg btn-primary bg-none border-metro border-4 rounded-md" href="/join">Join</a>
           <a class="btn btn-lg btn-primary bg-none border-tram border-4 rounded-md" href="/about">About</a>
-          <a class="btn btn-lg btn-primary bg-none border-bus border-4 rounded-md" href="/team">Policies</a>
+          <!-- <a class="btn btn-lg btn-primary bg-none border-bus border-4 rounded-md" href="/team">Policies</a> -->
       </div>
     </div>
    </div>

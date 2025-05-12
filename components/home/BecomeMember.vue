@@ -1,7 +1,5 @@
 <template>
-  <section class="bg-bg-dark text-fg-dark w-full p-8 flex flex-col gap-6">
-    <h1 class="text-3xl font-bold">Become a Member</h1>
-    <p class="text-xl">Whether you're a student, a teacher or an institutional staff member, STRA has a membership for you. Even costs less than a week's Myki fare.</p>
+  <section class="bg-bg-dark text-fg-dark w-full flex flex-col gap-6">
     <div class="flex flex-col lg:flex-row gap-8 w-full justify-center items-center">
       <div class="flex flex-col bg-bg text-fg p-4 rounded-sm border-l-6 border-tram gap-2 h-fit">
         <h1 class="text-xl font-bold">Student Membership</h1>
