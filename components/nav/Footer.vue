@@ -12,19 +12,19 @@
                   >
                 </a>
               <div class="flex flex-row gap-4">
-                <a aria-label="Youtube" href="https://www.youtube.com/channel/UCQJKJgnMlwMRUDS6QFJ8RgA" rel=me>
+                <a aria-label="Youtube" class="button" href="https://www.youtube.com/@stra_org_au" rel=me>
                   <Icon name="simple-icons:youtube" size="24" />
                 </a>
-                <a aria-label="Facebook" href="https://www.facebook.com/people/Student-Transport-Riders-Association/61575645665159/">
+                <a aria-label="Facebook" class="button" href="https://www.facebook.com/people/Student-Transport-Riders-Association/61575645665159/">
                   <Icon name="simple-icons:facebook" size="24" />
                 </a>
-                <a aria-label="Facebook" href="https://aus.social/@stra" rel=me>
+                <a aria-label="Facebook" class="button" href="https://aus.social/@stra" rel=me>
                   <Icon name="simple-icons:mastodon" size="24" />
                 </a>
-                <a aria-label="Instagram" href="https://instagram.com/stra_au" rel=me>
+                <a aria-label="Instagram" class="button" href="https://instagram.com/stra.org.au" rel=me>
                   <Icon name="simple-icons:instagram" size="24" />
                 </a>
-                <a aria-label="Bluesky" href="https://bsky.app/@stra.org.au" rel=me>
+                <a aria-label="Bluesky" class="button" href="https://bsky.app/@stra.org.au" rel=me>
                   <Icon name="simple-icons:bluesky" size="24" />
                 </a>
               </div>
