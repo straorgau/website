@@ -45,7 +45,7 @@
           <a aria-label="Instagram" class="button" href="https://instagram.com/stra.org.au" rel=me>
             <Icon name="simple-icons:instagram" size="32" />
           </a>
-          <a aria-label="Bluesky" class="button" href="https://bsky.app/@stra.org.au" rel=me>
+          <a aria-label="Bluesky" class="button" href="https://bsky.app/profile/stra.org.au" rel=me>
             <Icon name="simple-icons:bluesky" size="32" />
           </a>
         </div>
