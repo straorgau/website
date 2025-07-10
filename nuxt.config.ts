@@ -13,11 +13,15 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-og-image',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    "pruvious"
   ],
   css: ['~/assets/css/main.css'],
   content: {
     
+  },
+  pinia: {
+    storesDirs: ["./stores/**"]
   },
   image: {
     quality: 80,
@@ -43,6 +47,16 @@ export default defineNuxtConfig({
       tidyHq: {
         clientId: ""
       }
+    },
+    zitadel: {
+      authEndpoint: "",
+      clientId: "",
+      clientSecret: ""
+    },
+  },
+  pruvious: {
+    jwt: {
+      secretKey: "Cbme6MK_yr9cF6JkNiGJIIrierZEqQ_y5WNh9pBm5d2z1EdlUpReMSd3C09gNjOv"
     }
   }
 })
