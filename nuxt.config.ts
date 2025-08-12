@@ -57,6 +57,9 @@ export default defineNuxtConfig({
   pruvious: {
     jwt: {
       secretKey: "Cbme6MK_yr9cF6JkNiGJIIrierZEqQ_y5WNh9pBm5d2z1EdlUpReMSd3C09gNjOv"
-    }
+    },
+    // Default dev database, as per the devcontainer config.
+    // Use environment var `NUXT_PRUVIOUS_DATABASE` in prod.
+    database: "postgresql://postgres:postgres@0.0.0.0:5432/stra_org_au"
   }
 })
