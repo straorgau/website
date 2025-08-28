@@ -3,9 +3,8 @@
     <Navbar />
     <div class="flex flex-col p-8 gap-4">
       <h1 class="text-4xl font-bold">Contact STRA</h1>
-      <section class="flex flex-col gap-4 pt-6">
-        <p class="text-lg"><strong>We are an entirely voluntary organisation, and our mail address is irregularly checked. Please use e-mail to contact us.</strong></p>
-
+      <section class="flex flex-col gap-4">
+        <p class="text-lg"><strong>We are an entirely voluntary organisation, and our mail address & phone number are irregularly checked. Please use e-mail to contact us.</strong></p>
         <div class="flex flex-col gap-4">
           <h1 class="text-2xl font-bold">E-mail</h1>
           <p class="text-lg">General email & enquiries: 
@@ -20,13 +19,20 @@
           </p>
         </div>
         <div class="flex flex-col gap-4">
+          <h1 class="text-2xl font-bold">Phone Number</h1>
+          <p class="text-lg">
+            (03) 8400 0963
+          </p>
+          <p class="text-lg">
+            <i>Available Monday to Friday, 9am-5pm, subject to volunteer availability.</i>
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
           <h1 class="text-2xl font-bold">Postal Address</h1>
           <p class="text-lg">
-            ATTN: Thomas Handbury
+            1 Tripovich St
             <br>
-            24 Wakefield St
-            <br>
-            Hawthorn VIC 3122
+            Brunswick VIC 3056
             <br>
             Australia
           </p>
