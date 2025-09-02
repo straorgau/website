@@ -64,7 +64,7 @@
 import Navbar from '~/components/nav/Navbar.vue';
 import Footer from '~/components/nav/Footer.vue';
 </script>
-<style>
+<style scoped>
 @reference "~/assets/css/main.css";
 
 .button {
