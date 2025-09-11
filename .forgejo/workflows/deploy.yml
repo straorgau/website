@@ -1,0 +1,20 @@
+name: Fly Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy website to Fly
+    runs-on: codeberg-small-lazy
+    concurrency: deploy-group
+    steps:
+      - uses: actions/checkout@v4
+      - uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
+        with:
+          version: v0.3.178
+        run: flyctl deploy --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
