@@ -12,6 +12,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: https://code.forgejo.org/actions/checkout@v4
+      # Since Github Actions' checkout plugin doesn't support sparse checkouts
+      # in submodules directly, this is the 'best' alternative.
+      - name: Create 'content' folder
+        run: mkdir -p content
+      - name: Checkout dependent repositories
+        uses: https://code.forgejo.org/actions/checkout@v4
+        with:
+          repository: https://codeberg.org/stra/policies
+          path: content/policies
+          sparse-checkout: |
+            policies/*.md
+            !README.md
+          sparse-checkout-cone-mode: false
       - name: Download 'flyctl' into the action runner.
         uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
       - name: Run deploy task
