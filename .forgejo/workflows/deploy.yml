@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     name: Deploy app to Fly.io
-    runs-on: ubuntu-latest
+    runs-on: codeberg-small-lazy
     steps:
       - name: Checkout repository
         uses: https://code.forgejo.com/actions/checkout@v4
