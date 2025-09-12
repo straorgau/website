@@ -7,18 +7,14 @@ on:
 
 jobs:
   deploy:
-    name: Deploy website to Fly
-    runs-on: codeberg-small-lazy
-    concurrency: deploy-group
+    name: Deploy app to Fly.io
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: https://code.forgejo.org/actions/checkout@v4
-    
-      - name: Run flyctl
+        uses: https://code.forgejo.com/actions/checkout@v4
+      - name: Download 'flyctl' into the action runner.
         uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
-        with:
-          version: v0.3.178
+      - name: Run deploy task
         run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
