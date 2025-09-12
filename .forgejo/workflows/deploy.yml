@@ -19,7 +19,9 @@ jobs:
       - name: Checkout dependent repositories
         uses: https://code.forgejo.org/actions/checkout@v4
         with:
-          repository: https://codeberg.org/stra/policies
+          # possible hack?
+          github-server-url: 'https://codeberg.org'
+          repository: stra/policies
           path: content/policies
           sparse-checkout: |
             policies/*.md
