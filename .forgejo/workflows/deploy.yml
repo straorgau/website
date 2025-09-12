@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -10,8 +11,11 @@ jobs:
     runs-on: codeberg-small-lazy
     concurrency: deploy-group
     steps:
-      - uses: actions/checkout@v4
-      - uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
+      - name: Checkout repository
+        uses: https://code.forgejo.org/actions/checkout@v4
+    
+      - name: Run flyctl
+        uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
         with:
           version: v0.3.178
         run: flyctl deploy --remote-only
