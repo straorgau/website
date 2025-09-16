@@ -13,7 +13,7 @@
           <li>Member-only events,</li>
           <li>Discounted tickets to public events.</li>
         </ul>
-        <p class="text-sm">Must be a current student of a Victorian secondary OR tertiary institution.</p>
+        <p class="text-sm">Must be a current student of a Australian secondary OR tertiary institution, primarily residing in Victoria.</p>
         <a class="text-xl underline underline-offset-2 font-bold" href="https://stra.tidyhq.com/public/membership_levels/aae85025d6ea">Join here</a>
       </div>
       <div class="flex flex-col bg-bg text-fg p-4 rounded-sm border-l-6 border-vline gap-2 h-fit">
