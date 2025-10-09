@@ -1,0 +1,9 @@
+{
+  "subject": "acct:${email}",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://auth.stra.org.au/.well-known/openid-configuration"
+    }
+  ]
+}
