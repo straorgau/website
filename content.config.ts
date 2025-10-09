@@ -5,7 +5,10 @@ export default defineContentConfig({
   collections: {
     policies: defineCollection({
       type: "page",
-      source: "policies/*.md",
+      source: {
+        repository: "https://codeberg.org/stra/policies",
+        include: "policies/*.md"
+      },
     })
   }
 })

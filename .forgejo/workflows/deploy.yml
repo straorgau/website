@@ -12,16 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: https://code.forgejo.org/actions/checkout@v5
-        with:
-          submodules: 'recursive'
-      # Since Github Actions' checkout plugin doesn't support sparse checkouts
-      # in submodules directly, this is the 'best' alternative.
-      - name: Properly sparse checkout submodules
-        run: |
-          git config core.sparseCheckout true && \
-          git submodule update --init --recursive && \
-          echo -e "policies/*.md\n!README.md" > .git/modules/content/info/sparse-checkout && \
-          git submodule foreach 'git sparse-checkout init'
       - name: Download 'flyctl' into the action runner.
         uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
       - name: Run deploy task
