@@ -17,7 +17,7 @@ const { data: releases } = await useAsyncData(route.path, async () => {
       <section class="flex flex-col gap-4 w-full">
         <div v-for="release in releases" :key="release.id" class="flex flex-col p-4 bg-bg text-bg-dark rounded-sm gap-2">
           <a :href="release.path" class="text-xl font-bold">{{ release.title }}</a>
-          <span class="text-lg font-regular">{{ page.meta.lastUpdated }}</span>
+          <span class="text-lg font-light">Last updated {{ release.meta.lastUpdated }}.</span>
           <a :href="release.path" class="text-lg font-bold underline">Full Article</a>
         </div>
       
