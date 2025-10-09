@@ -3,7 +3,8 @@
     <Navbar />
     <Hero />
     <Policies />
-    <section class="bg-bg-dark text-fg-dark justify-center w-full p-8 flex flex-col gap-4">
+    <MediaReleases />
+    <section class="bg-bg text-fg justify-center w-full p-8 flex flex-col gap-4">
       <h1 class="text-3xl font-bold">Become a member</h1>
       <span class="text-xl">
         Whether you're a student or a staff member, we have the perfect membership for you. 
@@ -28,4 +29,5 @@ import Navbar from '~/components/nav/Navbar.vue';
 import Hero from '~/components/home/Hero.vue';
 import Policies from '~/components/home/Policies.vue';
 import Footer from '~/components/nav/Footer.vue';
+import MediaReleases from '~/components/home/MediaReleases.vue';
 </script>

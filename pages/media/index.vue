@@ -1,0 +1,31 @@
+<script setup>
+import Navbar from '~/components/nav/Navbar.vue';
+import Footer from '~/components/nav/Footer.vue';
+const route = useRoute();
+
+const { data: releases } = await useAsyncData(route.path, async () => {
+  return queryCollection('media').all()
+});
+</script>
+
+<template>
+  <div class="text-fg-dark bg-bg-dark min-h-screen">
+    <Navbar />
+    <div class="flex flex-col p-8 gap-4">
+      <h1 class="text-4xl font-bold">Media Releases</h1>
+      <h2 class="text-2xl font-semibold">List of the official media releases of the Student Transport Riders Association.</h2>
+      <section class="flex flex-col gap-4 w-full">
+        <div v-for="release in releases" :key="release.id" class="flex flex-col p-4 bg-bg text-bg-dark rounded-sm gap-2">
+          <a :href="release.path" class="text-xl font-bold">{{ release.title }}</a>
+          <span class="text-lg font-regular">{{ page.meta.lastUpdated }}</span>
+          <a :href="release.path" class="text-lg font-bold underline">Full Article</a>
+        </div>
+      
+        <span class="text-xl">Full media releases and file history can be found in 
+          <a href="https://codeberg.org/stra/media-releases/" class="underline underline-offset-4">this Codeberg repository</a>.
+        </span>
+      </section>
+    </div>
+    <Footer />
+  </div>
+</template>
