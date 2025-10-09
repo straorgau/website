@@ -29,12 +29,13 @@
                 </a>
               </div>
             </div>
-            <div class="flex flex-col lg:flex-row gap-[2rem] lg:gap-[8rem] justify-center">
+            <div class="flex flex-col md:flex-row gap-[2rem] lg:gap-[8rem] justify-center">
               <div class="grid grid-rows-[repeat(auto-fit,20%)] gap-2 place-items-center">
                 <h1 class="text-xl font-bold">About</h1>
                 <a href="/" class="text-lg font-semibold underline text-fg-dark/80">Home</a>
-                <a href="/policies" class="text-lg font-semibold underline text-fg-dark/80">Policies</a>
+                <a href="/media" class="text-lg font-semibold underline text-fg-dark/80">Media Releases</a>
                 <a href="/about" class="text-lg font-semibold underline text-fg-dark/80">About</a>
+                <a href="/contact" class="text-lg font-semibold underline text-fg-dark/80">Contact</a>
                 <a href="/sitemap.xml" class="text-lg font-semibold underline text-fg-dark/80">Sitemap</a>
               </div>
               <div class="grid grid-rows-[repeat(auto-fit,20%)] gap-2 place-items-center">
