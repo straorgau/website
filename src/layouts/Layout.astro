@@ -1,4 +1,36 @@
 ---
 import "~/styles/global.css"
+import { SITE_NAME, SITE_DESCRIPTION } from "~/global-vars"
+
 import "@fontsource-variable/public-sans"
+import { SEO } from "astro-seo"
+
+interface Props {
+  title: string;
+  description?: string | undefined;
+
+}
+
+const { title, description } = Astro.props;
 ---
+
+<html lang="en">
+  <head>
+    <SEO 
+      title={`${title} | ${SITE_NAME}`}
+      description={description ?? SITE_DESCRIPTION}
+
+      openGraph={{
+        basic: {
+          title: title,
+          type: "website",
+          image: "/og_image.png",
+          url: "https://stra.org.au"
+        }
+      }}
+    />
+  </head>
+  <body class="max-w-screen bg-bg-dark text-fg-dark">
+    <slot />
+  </body>
+</html>
