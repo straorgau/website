@@ -4,7 +4,7 @@
 ARG NODE_VERSION=22.14.0
 FROM node:${NODE_VERSION}-slim AS base
 
-LABEL fly_launch_runtime="Nuxt"
+LABEL fly_launch_runtime="Astro"
 
 # Nuxt app lives here
 WORKDIR /app

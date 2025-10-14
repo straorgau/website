@@ -1,9 +1,0 @@
-{
-  "subject": "acct:dsiad@stra.org.au",
-  "links": [
-    {
-      "rel": "http://openid.net/specs/connect/1.0/issuer",
-      "href": "https://mail.stra.org.au"
-    }
-  ]
-}

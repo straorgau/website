@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "bradlc.vscode-tailwindcss",
-    "vue.volar",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "astro-build.astro-vscode"
   ]
 }

@@ -1,7 +1,7 @@
 # `stra/website`
 This is the homepage for the [Student Transport Riders Association](https://stra.org.au), a student-run advocacy group in Melbourne, Australia.
 
-Written with **Vue 3**, [TailwindCSS](https://tailwindcss.com) and [**Nuxt**](https://nuxt.com).
+Written with **Astro v5**, [TailwindCSS](https://tailwindcss.com) and [**Nuxt**](https://nuxt.com).
 
 ## Instructions
 For developers, see the [DEVELOPMENT.md](https://codeberg.org/stra/website/src/branch/main/docs/DEVELOPMENT.md) file.
