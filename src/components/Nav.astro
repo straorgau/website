@@ -64,10 +64,17 @@ const standaloneLinks: Link[] = [
 ---
 
 <nav class="navbar p-8">
-  <div class="navbar-start flex-1">
+  <div class="navbar-start flex-1 gap-4">
     <a href="/">
       <Image src={logoImage} layout="constrained" height="48" alt="Student Transport Riders Association Logo" />
     </a>
+    <span class="flex sm:hidden font-bold">
+      <p>STRA</p>
+    </span>
+    <span class="hidden sm:flex sm:flex-col font-bold">
+      <p>Student Transport</p>
+      <p>Riders Association</p>
+    </span>
   </div>
 
   <!-- Desktop menu -->
