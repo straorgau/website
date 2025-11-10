@@ -2,6 +2,8 @@
 import "~/styles/global.css"
 import { SITE_NAME, SITE_DESCRIPTION } from "~/global-vars"
 
+import Nav from "~/components/Nav.astro"
+
 import "@fontsource-variable/public-sans"
 import { SEO } from "astro-seo"
 
@@ -32,6 +34,7 @@ const { title, description } = Astro.props;
     />
   </head>
   <body class="max-w-screen bg-bg-dark text-fg-dark">
+    <Nav />
     <slot />
   </body>
 </html>

@@ -1,0 +1,29 @@
+---
+import homeHero from "~/assets/homeHero.jpg";
+
+import { Image } from "astro:assets";
+---
+<div class="flex w-screen pl-12 pr-12 pt-8 gap-4">
+  <div class="flex flex-col w-full gap-4 justify-start">
+    <h1 class="text-2xl sm:text-4xl font-bold">All aboard, students!</h1>
+    <span class="text-xl sm:text-2xl">
+      We are the peak body representing students using public transport in Victoria. 
+      We exist to advocate for the equity of young people in transport.
+    </span>
+    <div class="flex flex-row gap-4">
+      <a href="/join" class="fancy-button hover-gradient">Join today!</a>
+      <a href="/policies" class="fancy-button hover-gradient">Our policies</a>
+    </div>
+  </div>
+</div>
+<style scoped>
+  @reference "~/styles/global.css";
+
+  .fancy-button {
+    @apply flex items-center gap-2 rounded-md bg-bg/40 text-xl font-semibold px-4 py-2;
+  }
+
+  .hover-gradient {
+    @apply hover:bg-gradient-to-r from-bus via-tram to-metro;
+  }
+</style>
