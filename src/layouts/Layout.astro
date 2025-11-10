@@ -8,7 +8,6 @@ import { SEO } from "astro-seo"
 interface Props {
   title: string;
   description?: string | undefined;
-
 }
 
 const { title, description } = Astro.props;
@@ -16,6 +15,8 @@ const { title, description } = Astro.props;
 
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <SEO 
       title={`${title} | ${SITE_NAME}`}
       description={description ?? SITE_DESCRIPTION}

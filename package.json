@@ -16,7 +16,13 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.14",
     "astro": "^5.14.4",
+    "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "@iconify-json/gg": "^1.2.2",
+    "@toolwind/anchors": "^1.0.10",
+    "daisyui": "^5.4.3"
   }
 }

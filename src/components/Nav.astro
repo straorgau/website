@@ -1,0 +1,131 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import logoImage from "~/assets/logo.svg";
+
+type Link = {
+  ref: string;
+  text: string;
+};
+
+type LinkGroup = {
+  name: string;
+  links: Link[];
+};
+
+const aboutGroup: LinkGroup = {
+  name: "About",
+  links: [
+    {
+      text: "About STRA",
+      ref: "/about",
+    },
+    {
+      text: "Contact us",
+      ref: "/about/contact",
+    },
+    {
+      text: "History",
+      ref: "/about/history",
+    },
+    {
+      text: "Team",
+      ref: "/about/team",
+    },
+  ],
+};
+
+const membersGroup: LinkGroup = {
+  name: "Membership",
+  links: [
+    {
+      text: "Join or renew",
+      ref: "https://stra.org.au/join",
+    },
+    {
+      text: "Member login",
+      ref: "https://stra.tidyhq.com",
+    },
+  ],
+};
+
+const linkGroups = [aboutGroup, membersGroup];
+
+const standaloneLinks: Link[] = [
+  {
+    text: "Join STRA today!",
+    ref: "/join",
+  },
+  {
+    text: "Donate",
+    ref: "/donate",
+  },
+];
+---
+
+<nav class="navbar p-8">
+  <div class="navbar-start flex-1">
+    <a href="/">
+      <Image src={logoImage} layout="constrained" height="48" alt="Student Transport Riders Association Logo" />
+    </a>
+  </div>
+
+  <!-- Desktop menu -->
+  <div class="hidden sm:flex sm:flex-none">
+    <ul class="menu menu-horizontal gap-2 px-1">
+      {
+        standaloneLinks.map((l) => (
+          <li><a class="rounded-md bg-bg/20 text-lg font-semibold" href={l.ref}>{l.text}</a></li>
+        ))
+      }
+      {
+        linkGroups.map((g) => (
+          <div class="dropdown dropdown-bottom dropdown-end">
+            <button tabindex="0" role="button" class="flex items-center gap-2 rounded-md bg-bg/40 text-lg font-semibold px-3 py-1.5">
+              {g.name}
+              <Icon name="gg:chevron-down" />
+            </button>
+            <ul tabindex="-1" class="dropdown-content menu bg-bg-dark outline-1 outline-fg-dark w-52 p-2">
+              {
+                g.links.map((l) => (
+                  <li><a class="text-sm" href={l.ref}>{l.text}</a></li>
+                ))
+              }
+            </ul>
+          </div>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="dropdown dropdown-bottom dropdown-end sm:hidden sm:flex-none">
+    <button tabindex="0" role="button" class="flex items-center gap-2 rounded-md bg-bg/40 text-lg font-semibold px-3 py-1.5">
+      <Icon name="gg:menu" size="36"/>
+    </button>
+    <ul tabindex="-1" class="dropdown-content menu menu-sm mt-6 bg-bg-dark outline-1 z-[1] w-52 divide-y divide-fg-dark">
+      {
+        standaloneLinks.map((l) => (
+          <li>
+            <a class="flex items-center text-lg font-semibold p-2" href={l.ref}>
+              {l.text}
+              <Icon name="gg:arrow-top-right" size={24} />
+            </a>
+          </li>
+        ))
+      }
+      {
+        linkGroups.map((g) => (
+          <li>
+            <span class="flex items-center text-lg font-semibold p-2">{g.name}</span>
+            {
+              g.links.map((l) => (
+                <a href={l.ref} class="text-lg pl-4">{l.text}</a>
+              ))
+            }
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
