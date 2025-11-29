@@ -34,9 +34,11 @@ const { title, description } = Astro.props;
       }}
     />
   </head>
-  <body class="max-w-screen bg-bg-dark text-fg-dark">
+  <body class="flex flex-col min-h-svh bg-bg-dark text-fg-dark">
     <Nav />
-    <slot />
+    <main class="flex-auto">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

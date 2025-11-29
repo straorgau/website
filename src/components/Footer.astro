@@ -4,7 +4,7 @@ import logoImage from "~/assets/logo.svg";
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 ---
-<footer class="flex w-full py-8 px-48 fixed bottom-0 justify-center">
+<footer class="flex w-full bg-inherit p-8 justify-center">
   <div class="flex flex-col gap-2 items-center">
     <Image src={logoImage} layout="constrained" height="48" alt="Student Transport Riders Association Logo" />
     <span class="font-bold">Student Transport Riders Association</span>
@@ -28,7 +28,7 @@ import { Icon } from "astro-icon/components";
         <Icon name="simple-icons:instagram" />
       </a>
     </div>
-    <span class="text-sm text-center">
+    <span class="text-xs text-center max-w-4xl">
        The STRA operates on the Country of the Wurundjeri Woi-Wurrung and Boon Wurrung peoples of the Kulin nation and pays respect to First Peoples throughout the land we call Victoria and Australia. 
        We acknowledge the unique impact of transport infrastructure on the native environment. 
        Sovereignty was never ceded, <strong>this always was and always will be Aboriginal land.</strong>
