@@ -1,0 +1,54 @@
+---
+import logoImage from "~/assets/logo.svg";
+
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+---
+<footer class="flex w-full py-8 px-48 fixed bottom-0 justify-center">
+  <div class="flex flex-col gap-2 items-center">
+    <Image src={logoImage} layout="constrained" height="48" alt="Student Transport Riders Association Logo" />
+    <span class="font-bold">Student Transport Riders Association</span>
+    <div class="flex flex-row mb-3 gap-4">
+      <a href="https://youtube.com/@stra_org_au">
+        <Icon name="simple-icons:youtube" />
+      </a>
+      <a href="https://www.facebook.com/people/Student-Transport-Riders-Association/61575645665159/">
+        <Icon name="simple-icons:facebook" />
+      </a>
+      <a href="https://discord.gg/M9BxBDBbfX">
+        <Icon name="simple-icons:discord" />
+      </a>
+      <a href="https://aus.social/@stra">
+        <Icon name="simple-icons:mastodon" />
+      </a>
+      <a href="https://bsky.app/profile/stra.org.au">
+        <Icon name="simple-icons:bluesky" />
+      </a>
+      <a href="https://instagram.com/stra.org.au">
+        <Icon name="simple-icons:instagram" />
+      </a>
+    </div>
+    <span class="text-sm text-center">
+       The STRA operates on the Country of the Wurundjeri Woi-Wurrung and Boon Wurrung peoples of the Kulin nation and pays respect to First Peoples throughout the land we call Victoria and Australia. 
+       We acknowledge the unique impact of transport infrastructure on the native environment. 
+       Sovereignty was never ceded, <strong>this always was and always will be Aboriginal land.</strong>
+    </span>
+    <span class="text-xs text-center">
+      &copy; Student Transport Riders Association Incorporated, ABN 30 124 602 756
+    </span>
+    <div class="flex flex-row gap-4 text-xs">
+      <a href="https://codeberg.org/stra/website">Source code</a>
+    </div>
+  </div>
+</footer>
+<style scoped>
+  @reference "~/styles/global.css";
+
+  a {
+    @apply underline underline-offset-2;
+  }
+
+  span > strong {
+    @apply font-bold;
+  }
+</style>
