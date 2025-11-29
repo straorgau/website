@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@iconify-json/gg": "^1.2.2",
+    "@iconify-json/simple-icons": "^1.2.60",
     "@toolwind/anchors": "^1.0.10",
     "daisyui": "^5.4.3"
   }
