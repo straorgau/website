@@ -1,8 +1,8 @@
-name: Fly Deploy
+name: Fly Deploy (Beta)
 on:
   push:
     branches:
-      - main
+      - v2
   workflow_dispatch:
 
 jobs:
