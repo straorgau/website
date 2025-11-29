@@ -1,7 +1,7 @@
 # syntax = docker/dockerfile:1
 
 # Adjust NODE_VERSION as desired
-ARG NODE_VERSION=22.18.0
+ARG NODE_VERSION=24.11.1
 FROM node:${NODE_VERSION}-slim AS base
 
 LABEL fly_launch_runtime="Astro"
@@ -39,11 +39,15 @@ RUN pnpm prune --prod
 
 
 # Final stage for app image
-FROM nginx
+FROM base
 
 # Copy built application
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/node_modules /app/node_modules
+COPY --from=build /app/dist /app/dist
+
+ENV PORT=4321
+ENV HOST=0.0.0.0
 
 # Start the server by default, this can be overwritten at runtime
-EXPOSE 80
-CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
+EXPOSE 4321
+CMD [ "node", "./dist/server/entry.mjs" ]
