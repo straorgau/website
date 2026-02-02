@@ -6,14 +6,14 @@ export default defineContentConfig({
     policies: defineCollection({
       type: "page",
       source: {
-        repository: "https://codeberg.org/stra/policies",
+        repository: "https://github.com/straorgau/policies/tree/main",
         include: "policies/*.md"
       },
     }),
     media: defineCollection({
       type: "page",
       source: {
-        repository: "https://codeberg.org/stra/media-releases",
+        repository: "https://github.com/straorgau/media-releases/tree/main",
         include: "media/**/*.md"
       },
     })
