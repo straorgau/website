@@ -1,7 +1,7 @@
 # syntax = docker/dockerfile:1
 
 # Adjust NODE_VERSION as desired
-ARG NODE_VERSION=22.14.0
+ARG NODE_VERSION=24.13.0
 FROM node:${NODE_VERSION}-slim AS base
 
 LABEL fly_launch_runtime="Nuxt"
@@ -12,6 +12,10 @@ WORKDIR /app
 # Set production environment
 ENV NODE_ENV="production"
 
+# Install pnpm
+ARG PNPM_VERSION=10.28.2
+RUN npm install -g pnpm@$PNPM_VERSION
+
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
@@ -20,12 +24,9 @@ FROM base AS build
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3
 
-# Enable corepack and install `pnpm`
-RUN corepack install 
-
 # Install node modules
-COPY package-lock.json package.json ./
-RUN pnpm install --frozen-lockfile
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile --prod=false
 
 # Copy application code
 COPY . .
@@ -33,13 +34,19 @@ COPY . .
 # Build application
 RUN pnpm run build
 
+
 # Final stage for app image
 FROM base
 
 # Copy built application
 COPY --from=build /app/.output /app/.output
 
+# Setup sqlite3 on a separate volume
+RUN mkdir -p /data
+VOLUME /data
+
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
-ENV HOST=0
+ENV DATABASE_URL="file:///data/sqlite.db" \
+    HOST=0
 CMD [ "node", ".output/server/index.mjs" ]
