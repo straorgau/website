@@ -8,7 +8,8 @@
       >
       <span class="break-word max-w-[8ch] font-bold">Student Transport Riders Association</span>
     </a>
-    <div class="hidden lg:flex lg:flex-row lg:justify-end lg:flex-grow self-center lg:gap-4">
+    <div class="hidden lg:flex lg:flex-row lg:justify-end lg:flex-grow items-center self-center lg:gap-4">
+      <a class="rounded-2xl p-3 bg-bg/30 text-lg font-bold" href="https://stra.tidyhq.com">Member Login</a>
       <a class="text-xl font-semibold underline" href="/join">Join</a>
       <Dropdown title="About">
         <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/about">About Us</a>
@@ -19,6 +20,7 @@
     </div>
     <div class="lg:hidden flex flex-row justify-end flex-grow">
       <MobileDropdown>
+        <a class="rounded-2xl p-3 bg-bg/30 text-lg font-bold" href="https://stra.tidyhq.com">Member Login</a>
         <a class="text-xl font-semibold underline" href="/join">Join</a>
         <MobileSubmenu title="About">
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/about">About the STRA</a>
