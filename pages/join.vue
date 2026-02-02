@@ -19,7 +19,7 @@ import BecomeMember from '~/components/home/BecomeMember.vue';
         <BecomeMember />
         <h2 class="text-3xl font-bold">Membership Benefits</h2>
         <div class="w-full overflow-x-auto">
-          <table class="table-auto w-full border-collapse text-left">
+          <table class="table-auto md:w-[60%] mx-auto border-collapse text-left">
             <thead class="text-fg-dark font-bold">
                 <tr>
                     <td class="border border-fg-dark text-center p-4">Benefits</td>
