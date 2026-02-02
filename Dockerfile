@@ -20,16 +20,18 @@ FROM base AS build
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3
 
+# Enable corepack and install `pnpm`
+RUN corepack install 
+
 # Install node modules
 COPY package-lock.json package.json ./
-RUN npm ci --include=dev
+RUN pnpm install --frozen-lockfile
 
 # Copy application code
 COPY . .
 
 # Build application
-RUN npm run build
-
+RUN pnpm run build
 
 # Final stage for app image
 FROM base
