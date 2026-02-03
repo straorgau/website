@@ -54,6 +54,9 @@
           <a aria-label="Bluesky" class="button" href="https://bsky.app/profile/stra.org.au" rel=me>
             <Icon name="simple-icons:bluesky" size="32" />
           </a>
+          <a aria-label="Discord" class="button" href="https://discord.gg/M9BxBDBbfX">
+            <Icon name="simple-icons:discord" size="32" />
+          </a>
         </div>
       </section>
     </div>
