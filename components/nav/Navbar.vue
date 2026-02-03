@@ -11,6 +11,9 @@
     <div class="hidden lg:flex lg:flex-row lg:justify-end lg:flex-grow items-center self-center lg:gap-4">
       <a class="rounded-2xl p-3 bg-bg/30 text-lg font-bold" href="https://stra.tidyhq.com">Member Login</a>
       <a class="text-xl font-semibold underline" href="/join">Join</a>
+      <Dropdown title="News">
+        <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/media">Media Releases</a>
+      </Dropdown>
       <Dropdown title="About">
         <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/about">About Us</a>
         <a class="text-sm font-semibold hover:underline hover:underline-offset-2" href="/policies">Policies</a>
@@ -22,6 +25,9 @@
       <MobileDropdown>
         <a class="rounded-2xl p-3 bg-bg/30 text-lg font-bold" href="https://stra.tidyhq.com">Member Login</a>
         <a class="text-xl font-semibold underline" href="/join">Join</a>
+        <MobileSubmenu title="News">
+          <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/media">Media Releases</a>
+        </MobileSubmenu>
         <MobileSubmenu title="About">
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/about">About the STRA</a>
           <a class="text-lg font-semibold hover:underline hover:underline-offset-2" href="/policies">Policies</a>
