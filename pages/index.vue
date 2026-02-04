@@ -14,7 +14,7 @@
       <div class="flex justify-end">
         <a
         class="flex flex-row justify-end text-2xl font-bold underline underline-offset-4"
-        href="/policies"
+        href="/join"
         >
           <Icon name="gg:arrow-top-right" size="32" />
           Find out more
