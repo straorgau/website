@@ -1,6 +1,6 @@
 <template>
-  <div @mouseleave="onLeave" @mouseover="onOver">
-    <button class="flex flex-row gap-2 items-center">
+  <div>
+    <button @click="show = !show" @focusout="show = false" class="flex flex-row gap-2 items-center">
       <span class="text-xl font-semibold">{{title}}</span>
       <Icon v-if="!show" aria-label="Open" name="gg:chevron-down" size="20" />
       <Icon v-else aria-label="Close" name="gg:chevron-up" size="20" />
@@ -14,9 +14,6 @@
 </template>
 <script setup lang="ts">
 const show = ref(false);
-
-const onOver = () => show.value = true;
-const onLeave = () => show.value = false;
 
 defineProps<{
   title: string;
