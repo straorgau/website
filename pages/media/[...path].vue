@@ -6,6 +6,18 @@ const route = useRoute();
 const { data: page } = await useAsyncData(route.path, async () => {
   return queryCollection('media').path(route.path).first()
 });
+
+useSeoMeta({
+  title: `${page.value.title} | Student Transport Riders Association`,
+  ogTitle: `${page.value.title} | Student Transport Riders Association`,
+  ogType: 'article',
+  author: 'Student Transport Riders Association',
+  publisher: 'Student Transport Riders Association',
+  articlePublishedTime: page.value.lastUpdated,
+  description: page.value.description,
+  ogImage: '/assets/openGraph.jpg',
+  twitterCard: 'summary_large_image'
+})
 </script>
 
 <template>
