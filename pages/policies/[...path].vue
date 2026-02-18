@@ -27,7 +27,7 @@ useSeoMeta({
       </div>
       <div class="flex">
         <span class="text-lg font-extralight pr-2">Last updated {{ page.meta.lastUpdated }}. 
-          <a :href="`https://github.com/straorgau/policies/src/branch/main/${page.stem}.${page.extension}`" class="underline underline-offset-4">Source</a>
+          <a :href="`https://github.com/straorgau/policies/blob/main/${page.stem}.${page.extension}`" class="underline underline-offset-4">Source</a>
         </span>
       </div>
       <section class="prose prose-invert lg:prose-lg">
