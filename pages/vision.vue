@@ -9,7 +9,7 @@ import Footer from '~/components/nav/Footer.vue';
     <div class="flex flex-col p-8 gap-4 items-center justify-center">
       <h1 class="text-4xl font-bold">STRA's Vision</h1>
       <h2 class="text-2xl font-semibold">Our vision to reduce emissions in transport, Australia's only sector that is growing in emissions.</h2>
-      <section class="flex flex-col gap-4 max-w-fit mx-[20%] pt-4">
+      <section class="flex flex-col gap-4 max-w-fit lg:mx-[20%] pt-4">
         <h1 class="text-xl font-bold">Background</h1>
         <p class="text-lg">
           As of March 2025, transport is the only sector which is <em>increasing</em> its carbon output, according to the National Greenhouse Gas Inventory,
