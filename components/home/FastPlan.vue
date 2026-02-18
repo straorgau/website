@@ -44,12 +44,12 @@
         </div>
       </div>
     </div>
-    <!-- <a
+    <a
         class="flex flex-row justify-end text-2xl underline font-bold"
         href="/vision"
       >
         <Icon name="gg:arrow-top-right" size="32" />
         Our Vision
-    </a> -->
+    </a>
   </section>
 </template>
