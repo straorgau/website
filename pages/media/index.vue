@@ -22,7 +22,7 @@ const { data: releases } = await useAsyncData(route.path, async () => {
         </div>
       
         <span class="text-xl">Full media releases and file history can be found in 
-          <a href="https://codeberg.org/stra/media-releases/" class="underline underline-offset-4">this Codeberg repository</a>.
+          <a href="https://github.com/straorgau/media-releases/" class="underline underline-offset-4">this Codeberg repository</a>.
         </span>
       </section>
     </div>
