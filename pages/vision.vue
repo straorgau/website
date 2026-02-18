@@ -9,7 +9,7 @@ import Footer from '~/components/nav/Footer.vue';
     <div class="flex flex-col p-8 gap-4 items-center justify-center">
       <h1 class="text-4xl font-bold">STRA's Vision</h1>
       <h2 class="text-2xl font-semibold">Our vision to reduce emissions in transport, Australia's only sector that is growing in emissions.</h2>
-      <section class="flex flex-col gap-4 lg:items-center max-w-fit">
+      <section class="flex flex-col gap-4 max-w-fit mx-[20%] pt-4">
         <h1 class="text-xl font-bold">Background</h1>
         <p class="text-lg">
           As of March 2025, transport is the only sector which is <em>increasing</em> its carbon output, according to the National Greenhouse Gas Inventory,
@@ -23,7 +23,7 @@ import Footer from '~/components/nav/Footer.vue';
         <p class="text-lg">
           This means that half of all Victorian commuters to schools, universities and TAFEs can get to their classes by sustainable transport by the end of the decade.
         </p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 self-center lg:mx-[64px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:mx-[64px]">
           <div class="flex flex-col p-4 gap-2 bg-bg text-fg rounded-xl">
             <span class="text-lg font-bold">Fares</span>
             <p>We need a reformed fare system that benefits young people, especially financially precarious students.</p>
