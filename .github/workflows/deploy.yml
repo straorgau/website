@@ -8,12 +8,12 @@ on:
 jobs:
   deploy:
     name: Deploy app to Fly.io
-    runs-on: codeberg-small-lazy
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: https://code.forgejo.org/actions/checkout@v5
+        uses: actions/checkout@v5
       - name: Download 'flyctl' into the action runner.
-        uses: https://github.com/superfly/flyctl-actions/setup-flyctl@master
+        uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Run deploy task
         run: flyctl deploy --remote-only
         env:
