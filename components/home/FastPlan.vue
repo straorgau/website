@@ -15,7 +15,7 @@
         >
           <h1 class="text-xl font-bold">Fares</h1>
           <span class="text-lg font-semibold"
-            >We need a simpler, cheaper fare system for financially precarious students and young people.</span
+            >We need a simpler, cheaper fare system so that you don't have to choose between lunch and transport.</span
           >
         </div>
         <div
@@ -39,7 +39,7 @@
         >
           <h1 class="text-xl font-bold">Time</h1>
           <span class="text-lg font-semibold"
-            >Students and young people deserve the freedom to study, work, and play whenever and wherever they want, it's imperative that fast and frequent transport operates throughout the day (<em>and night</em>) to get them where they need to go.</span
+            >You deserve the freedom to study, work, and play whenever and wherever you want, it's imperative that fast and frequent transport operates throughout the day (<em>and night</em>) to get you where you need to go.</span
           >
         </div>
       </div>
