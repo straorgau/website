@@ -16,6 +16,6 @@ import { formatDate } from "~/lib/dateUtil";
 const route = useRoute();
 
 const { data: releases } = await useAsyncData(route.path, async () => {
-  return queryCollection('media').order('lastUpdated', 'DESC').all()
+  return queryCollection('media').order('lastUpdated', 'DESC').limit(3).all()
 });
 </script>
