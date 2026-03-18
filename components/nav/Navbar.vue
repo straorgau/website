@@ -1,12 +1,20 @@
 <template>
   <nav class="flex flex-row items-center w-full p-8 h-32 bg-bg-dark">
     <a class="flex flex-row gap-4 items-center text-sm" href="/">
-      <img
-        src="/assets/img/logo.png"
-        alt="Student Transport Riders Association Logo"
-        class="max-w-[48px]"
-      >
-      <span class="break-word max-w-[8ch] font-bold">Student Transport Riders Association</span>
+      <picture>
+        <source 
+          srcset="/assets/img/horizontalLockup.png"
+          media="(width >= 600px)"
+          width="227"
+          height="48"
+        >
+        <img 
+          src="/assets/img/logo.png"
+          alt="Student Transport Riders Association logo"
+          width="48"
+          height="55"
+        >
+      </picture>
     </a>
     <div class="hidden lg:flex lg:flex-row lg:justify-end lg:grow items-center self-center lg:gap-4">
       <a class="rounded-2xl p-3 bg-bg/30 text-lg font-bold" href="https://stra.tidyhq.com/users/sign_in">Member Login</a>
