@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-og-image',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@benedictleejh/nuxt-sanitise-html',
   ],
   css: ['~/assets/css/main.css'],
   content: {
