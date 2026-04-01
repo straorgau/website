@@ -1,8 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import Navbar from '~/components/nav/Navbar.vue';
 import Footer from '~/components/nav/Footer.vue';
 
-const feed = await $fetch("/api/events");
+const { data: feed } = await useFetch("/api/events", {
+    lazy: true,
+    server: false,
+});
 </script>
 
 <template>
@@ -12,7 +15,7 @@ const feed = await $fetch("/api/events");
       <h1 class="text-4xl font-bold">Events</h1>
       <h2 class="text-2xl font-semibold">All the fun events STRA has to offer.</h2>
       <section class="flex flex-col gap-8 pt-12 items-center">
-        <div v-if="feed.length === 0" class="flex flex-col items-center text-center gap-4">
+        <div v-if="feed?.length == 0 || feed === null" class="flex flex-col items-center text-center gap-4">
             <span class="text-xl font-regular">There are currently no events on offer, check this page later.</span>
             <span class="text-xl font-regular">Make sure to follow our social media page for new events!</span>
             <div class="flex flex-row items-center gap-4 h-full">
@@ -37,18 +40,34 @@ const feed = await $fetch("/api/events");
             </div>
         </div>
         <div v-else class="grid lg:grid-cols-3 gap-4">
-            <div v-for="entry in feed" :key="entry.id" class="bg-bg text-fg p-4 gap-4 flex flex-col rounded-xl">
-                <h1 class="text-xl font-bold">{{ entry.title }}</h1>
-                <span class="flex flex-row gap-1 text-lg items-center underline">
-                    <Icon name="gg:arrow-top-right" size="24"/>
-                    <NuxtLink :href="entry.links[0].href">Event Link</NuxtLink>
-                </span>
-                <!-- Required to load HTML descriptions from the feed. -->
-                <span v-sanitise-html="entry.content"></span>
-            </div>
+          <div v-for="entry in feed" :key="entry.id" class="bg-bg text-fg p-4 gap-4 flex flex-col rounded-xl">
+            <h1 class="text-xl font-bold">{{ entry.title }}</h1>
+            <span class="flex flex-row gap-1 text-lg items-center underline">
+                <Icon name="gg:arrow-top-right" size="24"/>
+                <NuxtLink :href="entry.links[0].href">Event Link</NuxtLink>
+            </span>
+            <!-- Required to load HTML descriptions from the feed. -->
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <div class="html-content" v-html="entry.content" />
+          </div>
         </div>
       </section>
     </div>
     <Footer />
   </div>
 </template>
+<style lang="css">
+@reference "~/assets/css/main.css";
+
+.html-content {
+  h1,h2,h3 { 
+    display: none
+  }
+  
+  a { 
+    @apply underline underline-offset-2;
+  }
+
+  @apply flex flex-col gap-2;
+}
+</style>
