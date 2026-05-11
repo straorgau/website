@@ -1,0 +1,13 @@
+# The Committee board, elected on the 6th Jan 2025.
+year: 2025
+elected: 2025-01-06
+committee:
+  - name: Duale Siad
+    role: President
+  - name: Arden Gough Phillips
+    role: Vice President & Acting Secretary
+  - name: Danielle Birkett
+    role: Treasurer
+  - name: Thomas Handbury
+    role: Secretary
+    resigned: 2025-09-10
