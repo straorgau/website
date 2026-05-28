@@ -24,7 +24,7 @@ import BecomeMember from '~/components/home/BecomeMember.vue';
                 <tr>
                     <td class="border border-fg-dark text-center p-4">Benefits</td>
                     <td class="border border-fg-dark text-center p-4">Student</td>
-                    <td class="border border-fg-dark text-center p-4">Teacher</td>
+                    <td class="border border-fg-dark text-center p-4">Staff / Youth</td>
                     <td class="border border-fg-dark text-center p-4">Associate</td>
                 </tr>
             </thead>
