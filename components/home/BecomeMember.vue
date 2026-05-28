@@ -33,7 +33,7 @@
       </div>
       <div class="flex flex-col bg-bg text-fg p-4 rounded-sm border-l-6 border-metro gap-2 h-fit">
         <h1 class="text-xl font-bold">Youth Membership</h1>
-        <span class="text-3xl font-black">$15/year*</span>
+        <span class="text-3xl font-black">$15/year</span>
         <p class="text-lg semibold">
           Supports the STRA, and gives access to:
         </p>
@@ -44,11 +44,11 @@
           <li>Discounted tickets to public events.</li>
         </ul>
         <p class="text-sm">Must be a person residing in Victoria, under the age of 25, and otherwise not qualified for Student or Staff membership.</p>
-        <a class="text-xl underline underline-offset-2 font-bold">Coming soon</a>
+        <a class="text-xl underline underline-offset-2 font-bold" href="https://stra.tidyhq.com/public/membership_levels/759dcc7192ba">Join here</a>
       </div>
       <div class="flex flex-col bg-bg text-fg p-4 rounded-sm border-l-6 border-bus gap-2 h-fit">
         <h1 class="text-xl font-bold">Associate Membership</h1>
-        <span class="text-3xl font-black">$20/year*</span>
+        <span class="text-3xl font-black">$20/year</span>
         <p class="text-lg semibold">
           Supports the STRA, and gives access to:
         </p>
@@ -58,7 +58,7 @@
           <li>Discounted tickets to public events.</li>
         </ul>
         <p class="text-sm">Must not be qualified for either student or staff membership.</p>
-        <a class="text-xl underline underline-offset-2 font-bold">Coming soon</a>
+        <a class="text-xl underline underline-offset-2 font-bold" href="https://stra.tidyhq.com/public/membership_levels/5221f4e2acbc">Join here</a>
       </div>
     </div>
   </section>
