@@ -3,7 +3,7 @@
     <Navbar />
     <Hero />
     <FastPlan />
-    <MediaReleases />
+    <BlogPosts />
     <section class="bg-bg text-fg justify-center w-full p-8 flex flex-col gap-4">
       <h1 class="text-3xl font-bold">Become a member</h1>
       <span class="text-xl">
@@ -53,5 +53,5 @@ import Navbar from '~/components/nav/Navbar.vue';
 import Hero from '~/components/home/Hero.vue';
 import FastPlan from '~/components/home/FastPlan.vue';
 import Footer from '~/components/nav/Footer.vue';
-import MediaReleases from '~/components/home/MediaReleases.vue';
+import BlogPosts from '~/components/home/BlogPosts.vue';
 </script>

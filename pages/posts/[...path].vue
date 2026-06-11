@@ -5,7 +5,7 @@ import { formatDate } from '~/lib/dateUtil';
 const route = useRoute();
 
 const { data: page } = await useAsyncData(route.path, async () => {
-  return queryCollection('media').path(route.path).first()
+  return queryCollection('blog').path(route.path).first()
 });
 
 useSeoMeta({
@@ -25,14 +25,12 @@ useSeoMeta({
   <div class="text-fg-dark bg-bg-dark">
     <Navbar />
     <div class="flex flex-col p-8 gap-4 items-center justify-center">
-      <div class="grid grid-flow-col text-xl items-center w-fit divide-x-2">
-        <a href="/media" class="underline underline-offset-4 font-light w-fit pr-2">Media Releases</a>
-        
+      <div class="grid grid-flow-row text-2xl text-center items-center w-fit">        
         <a :href="page.path" class="underline underline-offset-4 font-bold w-fit pl-2">{{page.title}}</a>
       </div>
       <div class="flex">
         <span class="text-lg font-extralight pr-2">Last updated {{ formatDate(page.lastUpdated) }}. 
-          <a :href="`https://github.com/straorgau/media-releases/blob/main/${page.stem}.${page.extension}`" class="underline underline-offset-4">Source</a>
+          <a :href="`https://github.com/straorgau/blog/blob/main/${page.stem}.${page.extension}`" class="underline underline-offset-4">Source</a>
         </span>
       </div>
       <section class="prose prose-invert lg:prose-lg">

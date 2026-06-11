@@ -13,11 +13,11 @@ export default defineContentConfig({
         lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid date")
       }),
     }),
-    media: defineCollection({
+    blog: defineCollection({
       type: "page",
       source: {
-        repository: "https://github.com/straorgau/media-releases/tree/main",
-        include: "media/**/*.md",
+        repository: "https://github.com/straorgau/blog/tree/main",
+        include: "posts/**/*.md",
       },
       schema: z.object({
         title: z.string().optional(),
@@ -25,7 +25,8 @@ export default defineContentConfig({
           url: z.string(),
           alt: z.string()
         }).optional(),
-        lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid Date")
+        lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid Date"),
+        bodyHtml: z.string()
       })
     }),
     team: defineCollection({
