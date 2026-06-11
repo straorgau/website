@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bg-dark text-fg-dark justify-center w-full p-8 flex flex-col gap-4">
+  <section class="bg-bg-dark text-fg-dark justify-center w-full p-8 flex flex-col gap-6">
     <h1 class="text-3xl font-bold">Blog Posts & Media Releases</h1>
     <div class="flex flex-col lg:flex-row gap-4 justify-center self-center">
       <div v-for="release in releases" :key="release.id" class="flex flex-col p-6 bg-bg text-bg-dark rounded-sm gap-2 max-w-lg">
@@ -7,6 +7,15 @@
           <span class="text-lg font-light">Last updated {{ formatDate(release.lastUpdated) }}.</span>
           <a :href="release.path" class="text-lg font-bold underline">Full Article</a>
         </div>
+    </div>
+    <div class="flex justify-end">
+        <a
+        class="flex flex-row justify-end text-2xl font-bold underline underline-offset-4"
+        href="/join"
+        >
+          <Icon name="gg:arrow-top-right" size="32" />
+          More posts
+        </a>
     </div>
   </section>
 </template>

@@ -16,6 +16,8 @@ useHead({
     { rel: 'icon', type: 'image/x-png', href: '/favicon-16x16.png' },
     { rel: 'icon', type: 'image/x-png', href: '/favicon-32x32.png' },
     { rel: "manifest", href: "/site.webmanifest" },
+    { rel: 'alternate', type: 'application/rss+xml', title: "STRA RSS Feed", href: '/rss.xml' },
+    { rel: 'alternate', type: 'application/atom+xml', title: "STRA Atom Feed", href: '/atom'}
   ],
   meta: [
     { name: "theme-color", content: "#333434" }
