@@ -16,14 +16,14 @@ const { data: releases } = await useAsyncData(route.path, async () => {
     <Navbar />
     <div class="flex flex-col p-8 gap-4">
       <h1 class="text-4xl font-bold">Blog Posts</h1>
-      <h2 class="text-2xl font-semibold">List of posts from the Student Transport Riders Association.</h2>
+      <h2 class="text-2xl font-semibold">Updates from the Student Transport Riders Association.</h2>
+      <a class="text-lg font-light underline" href="/rss.xml">RSS Feed</a>
       <section class="flex flex-col gap-4 w-full">
         <div v-for="release in releases" :key="release.id" class="flex flex-col p-4 bg-bg text-bg-dark rounded-sm gap-2">
           <a :href="release.path" class="text-xl font-bold">{{ release.title }}</a>
           <span class="text-lg font-light">Last updated {{ formatDate(release.lastUpdated) }}.</span>
           <a :href="release.path" class="text-lg font-bold underline">Full Article</a>
         </div>
-      
         <span class="text-xl">File history can be found in 
           <a href="https://github.com/straorgau/blog/" class="underline underline-offset-4">this Github repository</a>.
         </span>

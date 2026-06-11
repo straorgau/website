@@ -26,7 +26,8 @@ export default defineContentConfig({
           url: z.string(),
           alt: z.string()
         }).optional(),
-        lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid Date")
+        lastUpdated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid Date"),
+        bodyHtml: z.string()
       })
     })
   }

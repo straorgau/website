@@ -13,7 +13,17 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-og-image',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    ['nuxt-content-body-html', {
+      fields: {
+        bodyHtml: {
+          rehypePlugins: {
+            // @ts-ignore
+            'rehype-urls': { options: url => (url.host ? url : new URL(url.href, process.env.BASE_URL)) },
+          },
+        },
+      },
+    }]
   ],
   css: ['~/assets/css/main.css'],
   content: {
