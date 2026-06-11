@@ -10,7 +10,7 @@ backend:
     uploadMedia: Upload - “{{path}}”
     deleteMedia: Delete - “{{path}}”
     openAuthoring: "{{message}}"
-  base_url: https://h7tcee.mmar.dev/
+  base_url: https://sveltia-authenticator.fly.dev
 
 
 media_folder: public/assets/images
