@@ -4,7 +4,7 @@
     <Hero />
     <FastPlan />
     <BlogPosts />
-    <section class="bg-bg text-fg justify-center w-full p-8 flex flex-col gap-4">
+    <section class="home-item gap-6">
       <h1 class="text-3xl font-bold">Become a member</h1>
       <span class="text-xl">
         Whether you're a student or a staff member, we have the perfect membership for you. 
@@ -21,7 +21,7 @@
         </a>
       </div>
     </section>
-    <section class="bg-bg-dark text-fg-dark justify-center w-full p-8 flex flex-col gap-4">
+    <section class="home-item-alt gap-6">
       <h1 class="text-3xl font-bold">Join our community</h1>
       <span class="text-xl">
         Whether you're a member, or just curious, we have the perfect community for you. Join our Discord server today, or follow us on social media.

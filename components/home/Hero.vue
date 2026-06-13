@@ -1,23 +1,24 @@
 <template>
-   <div class="flex flex-col place-items-center bg-inherit px-4 md:px-0 pb-12">
-    <div class="flex flex-col items-center text-center">
-      <div class="max-w-2xl gap-4">
-        <NuxtImg
-          src="/assets/hero.jpg"
-          alt="Passengers walking across Royal Parade, facing the University of Melbourne."
-          class="pb-4"
-          height="600"
-        />
-      </div>
-      <h1 class="text-5xl font-bold">All aboard.</h1>
-      <p class="py-6">
-          We are the Student Transport Riders Association, the student-run advocacy group for young people in Victoria using public transport.
-      </p>
-      <div class="flex flex-row gap-4">
-          <a class="btn btn-lg btn-primary bg-none border-metro border-4 rounded-md" href="/join">Join</a>
-          <a class="btn btn-lg btn-primary bg-none border-tram border-4 rounded-md" href="/about">About</a>
-          <!-- <a class="btn btn-lg btn-primary bg-none border-bus border-4 rounded-md" href="/team">Policies</a> -->
+   <div class="bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/assets/img/hero.jpg')] home-item-alt gap-4 h-120 bg-cover bg-center">
+    <div class="flex flex-row">
+      <div class="flex flex-col gap-4">
+        <h1 class="text-5xl font-bold">All aboard!</h1>
+        <p>
+            We are the <strong>Student Transport Riders Association</strong>, the student-run advocacy group for young people in Victoria using public transport.
+        </p>
+        <div class="flex flex-row gap-4">
+          <a class="hero-button bg-metro/70 hover:bg-metro" href="/join">Join</a>
+          <a class="hero-button bg-tram/70 hover:bg-tram" href="/about">About</a>
+          <a class="hero-button bg-vline/70 hover:bg-vline" href-="/vision">Vision</a>
+        </div>
       </div>
     </div>
    </div>
 </template>
+<style scoped>
+@reference "~/assets/css/main.css";
+
+.hero-button {
+  @apply rounded-2xl p-3 text-lg font-bold;
+}
+</style>

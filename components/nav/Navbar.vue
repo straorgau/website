@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-row items-center w-full p-8 h-32 bg-bg-dark">
+  <nav class="flex flex-row items-center w-full p-8 lg:p-16 h-32 bg-bg-dark">
     <a class="flex flex-row gap-4 items-center text-sm" href="/">
       <picture>
         <source 

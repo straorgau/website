@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bg text-fg w-full p-8 flex flex-col gap-4">
+  <section class="home-item gap-6">
     <h1 class="text-3xl font-bold">Our Vision</h1>
     <span class="text-xl">
       We want to reduce emissions in the only sector in Australia that is currently growing its carbon output -- <strong>transport</strong>.

@@ -28,3 +28,14 @@ defineOgImage({
   url: "/assets/openGraph.jpg"
 })
 </script>
+<style>
+@reference "~/assets/css/main.css";
+
+.home-item {
+  @apply bg-bg text-fg justify-center w-full flex flex-col py-8 px-8 lg:px-24;
+}
+
+.home-item-alt {
+  @apply bg-bg-dark text-fg-dark justify-center w-full flex flex-col py-8 px-8 lg:px-24;
+}
+</style>
