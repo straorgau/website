@@ -32,7 +32,6 @@
     "date-fns": "^4.1.0",
     "eslint": "^9.23.0",
     "feed": "^5.2.1",
-    "feedsmith": "^2.9.1",
     "nuxt": "^3.21.0",
     "nuxt-content-body-html": "4.0.4",
     "nuxt-og-image": "^5.1.3",
