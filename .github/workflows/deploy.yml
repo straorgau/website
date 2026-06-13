@@ -4,6 +4,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  repository_dispatch:
+    types: [blog-update]
 
 jobs:
   deploy:
