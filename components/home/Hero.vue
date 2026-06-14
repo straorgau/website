@@ -7,9 +7,9 @@
             We are the <strong>Student Transport Riders Association</strong>, the student-run advocacy group for young people in Victoria using public transport.
         </p>
         <div class="flex flex-row gap-4">
-          <a class="hero-button bg-metro/70 hover:bg-metro" href="/join">Join</a>
-          <a class="hero-button bg-tram/70 hover:bg-tram" href="/about">About</a>
-          <a class="hero-button bg-vline/70 hover:bg-vline" href-="/vision">Vision</a>
+          <NuxtLink class="hero-button bg-metro/70 hover:bg-metro" href="/join">Join</NuxtLink>
+          <NuxtLink class="hero-button bg-tram/70 hover:bg-tram" href="/about">About</NuxtLink>
+          <NuxtLink class="hero-button bg-vline/70 hover:bg-vline" href="/vision">Vision</NuxtLink>
         </div>
       </div>
     </div>
