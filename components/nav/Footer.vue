@@ -5,10 +5,10 @@
           <div class="w-full p-8 gap-4 flex items-center justify-center md:grid-cols-2">
               <div class="flex flex-col gap-6 items-center">
                 <a href="/">
-                  <img
-                    src="/assets/img/logo.png"
-                    alt="Student Transport Riders Association Logo"
-                    class="max-w-[48px] lg:max-w-[64px]"
+                  <img 
+                    srcset="/assets/img/horizontalLockup.png"
+                    width="227"
+                    height="48"
                   >
                 </a>
               <div class="flex flex-row gap-4">
