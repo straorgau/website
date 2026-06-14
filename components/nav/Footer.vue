@@ -1,5 +1,5 @@
 <template>
-  <footer class="absolute py-4 lg:py-16 w-full border-t-2 mx-auto border-t-fg-dark bg-bg-dark">
+  <footer class="relative py-4 lg:py-16 w-full border-t-2 mx-auto border-t-fg-dark bg-bg-dark">
     <div class="w-full grid">
       <div class="w-full flex">
           <div class="w-full p-8 gap-4 flex items-center justify-center md:grid-cols-2">
