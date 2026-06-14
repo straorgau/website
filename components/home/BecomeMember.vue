@@ -43,7 +43,7 @@
           <li>Member-only events,</li>
           <li>Discounted tickets to public events.</li>
         </ul>
-        <p class="text-sm">Must be a person residing in Victoria, under the age of 25, and otherwise not qualified for Student or Staff membership.</p>
+        <p class="text-sm">Must be a person residing in Victoria, between the ages of 13 and 25, and otherwise not qualified for Student or Staff membership.</p>
         <a class="text-xl underline underline-offset-2 font-bold" href="https://stra.tidyhq.com/public/membership_levels/759dcc7192ba">Join here</a>
       </div>
       <div class="flex flex-col bg-bg text-fg p-4 rounded-sm border-l-6 border-bus gap-2 h-fit">

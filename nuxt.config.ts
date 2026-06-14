@@ -25,6 +25,11 @@ export default defineNuxtConfig({
       },
     }]
   ],
+  routeRules: {
+    '/': { appLayout: 'default' },
+    '/*': { appLayout: 'subpage' },
+    '/posts': { appLayout: 'subpage' }
+  },
   css: ['~/assets/css/main.css'],
   content: {
     

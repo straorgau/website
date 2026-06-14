@@ -1,14 +1,14 @@
 <template>
-  <footer class="absolute py-4 lg:py-16 w-full border-t-2 mx-auto border-t-fg-dark bg-bg-dark">
+  <footer class="relative py-4 lg:py-16 w-full border-t-2 mx-auto border-t-fg-dark bg-bg-dark">
     <div class="w-full grid">
       <div class="w-full flex">
           <div class="w-full p-8 gap-4 flex items-center justify-center md:grid-cols-2">
               <div class="flex flex-col gap-6 items-center">
                 <a href="/">
-                  <img
-                    src="/assets/img/logo.png"
-                    alt="Student Transport Riders Association Logo"
-                    class="max-w-[48px] lg:max-w-[64px]"
+                  <img 
+                    srcset="/assets/img/horizontalLockup.png"
+                    width="227"
+                    height="48"
                   >
                 </a>
               <div class="flex flex-row gap-4">
